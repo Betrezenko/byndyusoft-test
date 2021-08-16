@@ -1,0 +1,23 @@
+# Default values for Helm Chart
+
+replicaCount: 2
+
+container:
+  image: nginxdemos/hello:latest
+
+readinessProbe:
+  initialDelaySeconds: 3
+  periodSeconds: 5
+  successThreshold: 1
+
+livenessProbe:
+  initialDelaySeconds: 35
+  periodSeconds: 5
+  successThreshold: 1
+
+rollingUpdate:
+  maxSurge: 1
+  maxUnavailable: 25%
+
+minReplicaCount: 2
+maxReplicaCount: 6
