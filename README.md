@@ -1,4 +1,4 @@
-# byndyusoft-test
+# Kubernetes with Helm chart
 Тестовое задание
 
 Для работы с Helm Chart требуется наличие kubectl и helm.
